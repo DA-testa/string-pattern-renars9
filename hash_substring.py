@@ -1,14 +1,14 @@
 # python3
 
 def read_input():
-    input_type = input("Enter input type (I for keyboard input, F for file input): ")
+    input_type = input()
     pattern = ""
     text = ""
     if input_type == "I":
-        pattern = input("Enter pattern: ").rstrip()
-        text = input("Enter text: ").rstrip()
+        pattern = input().rstrip()
+        text = input().rstrip()
     elif input_type == "F":
-        file_name = "tests/" + input("Enter file name: ").rstrip()
+        file_name = "tests/" + input().rstrip()
         with open(file_name) as file:
             pattern = file.readline().rstrip()
             text = file.readline().rstrip()
